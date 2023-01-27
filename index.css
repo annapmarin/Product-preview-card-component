@@ -104,3 +104,50 @@ button p {
 button:active {
     background-color: hsl(157, 38%, 24%);
 }
+
+@media screen and (max-width: 600px) {
+
+    html {
+        max-height: 100vh;
+    }
+    
+    main {
+        flex-direction: column;
+    }
+
+    #main-image {
+        content: url(./images/image-product-mobile.jpg);
+        border-radius: 10px 10px 0 0;
+        width: 340px;
+        margin-top: 0px;
+        height: 280px;
+    }
+
+    .text-container {
+        width: 340px;
+        height: 330px;
+        border-radius: 0 0 10px 10px;
+        padding-top: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+
+    .product-description {
+        line-height: 1.2rem;
+        font-size: 0.88rem;
+        margin-bottom: -10px;
+    }
+
+    .price-container p {
+        margin-top: 13px;
+    }
+
+    button {
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+}
